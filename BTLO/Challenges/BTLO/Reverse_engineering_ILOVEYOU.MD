@@ -19,3 +19,15 @@ Let's relive history by analysing the ‘ILOVEYOU’ malware.
 
 This challenge should be completed in a virtual machine as it contains real malware.
 ```
+
+## Q1, What is the text present as part of email when the victim received this malware?
+
+My thought process here was to check the email body tag, where I could find the code
+
+```
+male.Recipients.Add(malead)
+          male.Subject = "ILOVEYOU"
+          male.Body = vbcrlf & "<FLAG>"
+          male.Attachments.Add(dirsystem & "\LOVE-LETTER-FOR-YOU.TXT.vbs")
+          male.Send
+```

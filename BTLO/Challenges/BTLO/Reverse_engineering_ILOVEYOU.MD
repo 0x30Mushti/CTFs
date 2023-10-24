@@ -42,7 +42,7 @@ Homepages are based on register sub-keys/values (in most cases). So i started lo
 regcreate "HKCU\Software\Microsoft\Internet Explorer\Main\StartPage", "<FLAG>"/skladjflfdjghKJnwetryDGFikjUIyqwerWe546786324hjk4jnHHGbvbmKLJKjhkqj4w/WIN-BUGSFIX.exe"
 
 ```
-By using ctrl + v I got a hit on the IE StartPage path in the code. 
+By using ctrl + f I got a hit on the IE StartPage path in the code. 
 
 ## Q3, The malware replicated itself into 3 locations, what are they?
 
@@ -79,3 +79,20 @@ dirwin -- > C:\Windows\
 ```
 Then we just add the the object + the file = C:\Windows\System32\<PART OF THE FLAG>
 
+## Q4, What is the name of the file that looks for the filesystem?
+
+My approach here was very starightforward. 
+
+I just ctrl + f and searched for the most common windows filesystems NTFS & FAT32
+
+And got a hit: 
+
+```
+rem Check if a file named "<FLAG>" exists in the system files.
+  If (fileexist(dirsystem & "<FLAG>") = 1) Then
+    Randomize
+```
+
+## Q5, Which file extensions, beginning with m, does this virus target?
+
+At this point, I started to learn how the malware behaved. The malware liked to copy itself to to exsiting files in the system 

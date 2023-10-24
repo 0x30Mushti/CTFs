@@ -2,16 +2,16 @@
 
 # Challange intro
 ```
-Points: 10
+Points: 
+10
 
-Category: Reverse Engineering
+Category: 
+Reverse Engineering
 
-Cost: Free
+Cost: 
+Free
 
-added-Text: 
-
-Scenario
-
+Scenario:
 ILOVEYOU the 3 magical words which have an impact in most of the people's life.
 On the other hand, these 3 words don't need any introduction for the people in the Infosec industry.
 

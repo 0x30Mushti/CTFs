@@ -40,13 +40,13 @@ Answer: Noelle Johnson, Rachel Corbin, John Finney
 ```
 ## Q5: What is the SHA256 hash of the product documentation obtained by the suspect?
 
-```
+
 After looking thru the C: Location I found the path /Users/anit.ghosh/Documents which had alot of technical documents pdf'. 
 
 I had to filter out some by time, name etc. After I only had about 5 documents left I opened them up and found one with the text: "This document and any information in this is strictly confidential".
 
 After that I knew that it was the file asked for and I checked the file metadata and noticed the SHA-256 checksum.
-
+```
 Answer: add33ea905399c5063bcc3437cb5c0436a2fd6deb086bb0ec5bf886f72767242
 ```
 

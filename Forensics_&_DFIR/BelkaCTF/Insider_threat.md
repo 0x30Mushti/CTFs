@@ -12,9 +12,6 @@ This CTF is built for the belkasoft x software. I used autopsy which is an open 
 
 *SPOILER WARNING* As this is a retierd CTF I will be showing the answers *SPOILER WARNING*
 
-## Q1
-```
-What is the full name of the laptop owner?
-```
+## Q1, What is the full name of the laptop owner?
 
 

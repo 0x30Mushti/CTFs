@@ -11,31 +11,31 @@ This Capture The Flag (CTF) challenge is designed for the Belkasoft X software. 
 
 
 ## Q1: What is the full name of the laptop owner?
-```
-Autopsy provides us with OS accounts indexed, and after filtering out the built-in accounts, I find a user called Anit. Checking her Home Directory reveals C:/Users/anit.ghosh.
 
+Autopsy provides us with OS accounts indexed, and after filtering out the built-in accounts, I find a user called Anit. Checking her Home Directory reveals C:/Users/anit.ghosh.
+```
 Answer: Anit Ghosh
 ```
 ## Q2: What is the full address of the company's office?
-```
-By obtaining the domain and website, we could possibly figure this out, as the company's website usually contains a "contact us" or "about us" section. I explore the emails stored under "Users/anit.ghosh/AppData/Roaming/Thunderbird" and find the email address: anit.ghosh@praivacymatrix.com. A search for praivacymatrix.com online leads me to their website and office address.
 
+By obtaining the domain and website, we could possibly figure this out, as the company's website usually contains a "contact us" or "about us" section. I explore the emails stored under "Users/anit.ghosh/AppData/Roaming/Thunderbird" and find the email address: anit.ghosh@praivacymatrix.com. A search for praivacymatrix.com online leads me to their website and office address.
+```
 Answer: Ifangstrasse 6, 8952 Schlieren, Zurich, Switzerland
 ```
 ## Q3: On November 16th, the security department received a signal of unauthorized attempts to obtain the company's trade secrets. When did the suspect first show interest in those?
-```
+
 While reading the emails, I come across a message from Anit Ghosh:
 
 "Hey John, I've been requested to review a couple of files. Unfortunately, I couldn't find the last file in the list - new technical documentation. Could you help me find this file and send it to me? I would be very grateful!"
 
 This email was sent on: 2020-11-05 20:21:56 CET.
-
+```
 Answer: 2020-11-05 19:21:56 UTC
 ```
 ## Q4: What three employees should be asked questions about unauthorized requests from the suspect?
-```
-By readning all the mails and the content we can se some requests about the "Technical documentation"
 
+By readning all the mails and the content we can se some requests about the "Technical documentation"
+```
 Answer: Noelle Johnson, Rachel Corbin, John Finney
 ```
 ## Q5: What is the SHA256 hash of the product documentation obtained by the suspect?

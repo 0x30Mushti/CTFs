@@ -57,3 +57,11 @@ This could possible be working just by downloading the file from autopsy and ope
 Answer:Mark Zukko 381 
 ```
 ## Q7: 
+
+By defualt the downloads from a webbrowser goes in to the directory /Downloads/. So I looked in there and founds a file called "xraicommend-761263a55b8cfed4bcb8f87cbbb68beaf2ec2423.tar.gz", this file had ZoneID = 3 (which means it was downloaded from the internet zone). 
+
+The zone.identifier points toward the HostUrl=http://git.pm.internal/GBringley/xraicommend/archive/761263a55b8cfed4bcb8f87cbbb68beaf2ec2423.tar.gz
+
+```
+Answer: http://git.pm.internal/GBringley/xraicommend/archive/761263a55b8cfed4bcb8f87cbbb68beaf2ec2423.tar.gz
+```

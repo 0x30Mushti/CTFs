@@ -49,5 +49,12 @@ After that I knew that it was the file asked for and I checked the file metadata
 ```
 Answer: add33ea905399c5063bcc3437cb5c0436a2fd6deb086bb0ec5bf886f72767242
 ```
-
 ## Q6: What employee has actually provided the suspect with the product documentation?
+```
+For this question I had to switch to Belkasoft X software, as there are black filled rectangle above the scanned information. With Belkasoft X we can see the embedded files, the and the employee names and employee ID. 
+
+This could possible be working just by downloading the file from autopsy and opening it up in a pdf editor. But this was the fastest way for me.
+
+Answer:Mark Zukko 381 
+```
+## Q7: 

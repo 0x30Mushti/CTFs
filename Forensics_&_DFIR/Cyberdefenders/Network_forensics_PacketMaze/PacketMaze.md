@@ -13,7 +13,9 @@ For this I used network miner, load the pcap-file, Check the tab called "Credent
 Answer: AfricaCTF2021
 ````
 
-## Q2: What is the IPv6 address of the DNS server used by 192.168.1.26? (####::####:####:####:####) answer hides in the Software registry file under: SOFTWARE\Microsoft\Windows NT\CurrentVersion. Keep in mind that information about Windows resides in the Software file because Windows OS is considered software, or at least the registry thinks so. I am using Registry Explorer for registry forensics, a great tool written by Eric Zimmerman.
+## Q2: What is the IPv6 address of the DNS server used by 192.168.1.26? 
+
+(####::####:####:####:####) answer hides in the Software registry file under: SOFTWARE\Microsoft\Windows NT\CurrentVersion. Keep in mind that information about Windows resides in the Software file because Windows OS is considered software, or at least the registry thinks so. I am using Registry Explorer for registry forensics, a great tool written by Eric Zimmerman.
 
 Open Caploader, go to the "Hosts", check for IPv6 host having DNS port open. 
 ````
